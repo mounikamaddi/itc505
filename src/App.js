@@ -1,8 +1,15 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './src/home';
 
-function App() {
-  const value = 'World';
-  return <div>Hello {value}</div>;
+const RoutesTree = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/itc505/homework/2" element={<Home />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App;
+export default RoutesTree;
